@@ -1,0 +1,64 @@
+body{
+    background-color: brown;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    gap: 20px;
+}
+.div1{
+    background-color: cornflowerblue;
+}
+.div2{
+    background-image: url(./city1.webp);
+    background-size: cover;
+}
+.div3{
+    background-color: gold;
+}
+.div4{
+    background-image:url(./city2.webp) ;
+    background-size: cover;
+}
+/*For mobile*/
+@media only screen  and (min-width:250px) and (max-width:500px){
+    body{
+        background-color: aliceblue;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        gap: 20px;
+    }
+    .div1{
+        background-image: url(./city1.webp);
+        background-size: cover;
+    }
+    .div3{
+        background-image: url(./city2.webp);
+        background-size: cover;
+    }
+    .div2{
+        background-color: cornflowerblue;
+        background-image: none;
+    }
+    .div4{
+        background-color: gold;
+        background-image: none;
+    }
+}
+/*For tablet*/
+@media only screen and (min-width: 501px) and (max-width:750px){
+    body{
+        background-color: darkslategrey;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        gap: 20px;
+    }
+
+}
